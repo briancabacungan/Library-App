@@ -3,24 +3,24 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import './App.css';
 
 
-class Bookshelf extends React.Component {
+class Savedbooks extends React.Component {
     render() {
         return (
             <div>
                 <div className="center">
-                    <h1>Welcome to The Bookshelf</h1>
+                    <h1>Welcome to Your Saved Books</h1>
                 </div>
-                <div>
+                <div className="pic">
                     <button type="button" className="button">
                         <Link to="/">Home</Link>
                     </button>
                     <br /><br /><br />
                     <button type="button" className="button">
-                        <Link to="/bookshelf">Bookshelf</Link>
+                        <Link to="/booksearch">Book Search</Link>
                     </button>
                     <br /><br /><br />
                     <button type="button" className="button">
-                        <Link to="/booksearch">Search for Books</Link>
+                        <Link to="/savedbooks">Saved Books</Link>
                     </button>
                 </div>
             </div>
@@ -28,4 +28,4 @@ class Bookshelf extends React.Component {
     }
 }
 
-export default Bookshelf;
+export default Savedbooks;

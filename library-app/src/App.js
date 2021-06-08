@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import Mainpage from './Mainpage';
-import Bookshelf from './Bookshelf';
+import Savedbooks from './Savedbooks';
 import Booksearch from './Booksearch';
 import { BrowserRouter as Router, Route, Switch, Link, BrowserRouter } from 'react-router-dom';
 
@@ -11,8 +11,8 @@ class App extends React.Component {
       <BrowserRouter>
         <div>
           <Route exact path="/" component={Mainpage} />
-          <Route path="/bookshelf" component={Bookshelf} />
           <Route path="/booksearch" component={Booksearch} />
+          <Route path="/savedbooks" component={Savedbooks} />
         </div>
       </BrowserRouter>
     )

@@ -41,18 +41,14 @@ const App = () => {
                 <div className="center">
                     <h1>Book Search</h1>
                 </div>
-                <div>
-                    <button type="button" className="button">
-                        <Link to="/">Home</Link>
-                    </button>
-                    <br /><br /><br />
-                    <button type="button" className="button">
-                        <Link to="/bookshelf">Bookshelf</Link>
-                    </button>
-                </div>
             </div>
             <br /><br />
-            <form onSubmit={onSubmitHandler}>
+            <div className="pic">
+                <button type="button" className="button">
+                    <Link to="/">Home</Link>
+                </button>
+                <br />
+            <form onSubmit={onSubmitHandler} className="center">
                 <label>
                     <input
                         type="search"
@@ -63,6 +59,11 @@ const App = () => {
                     <button type="submit">Search</button>
                 </label>
             </form>
+            <br/> <br />
+            <button type="button" className="button">
+                        <Link to="/savedbooks">Saved Books</Link>
+            </button>
+            </div>
             <ul>
                 {
                     books.items.map((book, index) => {
@@ -74,6 +75,11 @@ const App = () => {
                                         <h3>{book.volumeInfo.title}</h3>
                                         <p>{bookAuthors(book.volumeInfo.authors)}</p>
                                         <p>{book.volumeInfo.publishedDate}</p>
+                                        <section>
+                                            <button type="button" className="button">
+                                                <Link to="/savedbooks">Add to Saved Books</Link>
+                                            </button>
+                                        </section>
                                     </div>
                                 </div>
                                 <hr />
