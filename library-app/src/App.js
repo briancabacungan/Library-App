@@ -14,6 +14,8 @@ class App extends React.Component {
         <div>
           <Route exact path="/" component={Mainpage} />
           <Route path="/bestsellers" component={Bestsellers} />
+          <Route path="/bookshelf" component={Bookshelf} />
+          <Route path="/cart" component={Cart} />
         </div>
       </BrowserRouter>
     )
