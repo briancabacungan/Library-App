@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import './App.css';
 
 class Mainpage extends React.Component {
@@ -13,17 +13,13 @@ class Mainpage extends React.Component {
                     <button type="button" className="button">
                         <Link to="/">Home</Link>
                     </button>
-                    <br/><br/><br/>
-                    <button type="button" className="button">
-                        <Link to="/bestsellers">Bestsellers</Link>
-                    </button>
-                    <br/><br/><br/>
+                    <br /><br /><br />
                     <button type="button" className="button">
                         <Link to="/bookshelf">Bookshelf</Link>
                     </button>
-                    <br/><br/><br/>
+                    <br /><br /><br />
                     <button type="button" className="button">
-                        <Link to="/cart">Cart</Link>
+                        <Link to="/booksearch">Search for Books</Link>
                     </button>
                 </div>
             </div>
