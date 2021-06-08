@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import axios from 'axios';
 import './App.css';
 
-const App = () => {
+const Booksearch = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [books, setBooks] = useState({ items: [] });
     const onInputChange = (e) => {
@@ -35,7 +35,10 @@ const App = () => {
         return authors;
     }
 
+    
+
     return (
+
         <section>
             <div>
                 <div className="center">
@@ -75,9 +78,13 @@ const App = () => {
                                         <h3>{book.volumeInfo.title}</h3>
                                         <p>{bookAuthors(book.volumeInfo.authors)}</p>
                                         <p>{book.volumeInfo.publishedDate}</p>
+                                        <p>{book.volumeInfo.description}</p>
+                                        <a href={book.saleInfo.buyLink}>Click Here to Purchase from Google</a>
+                                        
                                         <section>
+                                            <br/>
                                             <button type="button" className="button">
-                                                <Link to="/savedbooks">Add to Saved Books</Link>
+                                                <Link to={"/savedbooks"}>Add to Saved Books</Link>
                                             </button>
                                         </section>
                                     </div>
@@ -92,4 +99,4 @@ const App = () => {
     );
 }
 
-export default App;
+export default Booksearch;

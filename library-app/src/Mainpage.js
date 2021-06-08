@@ -25,8 +25,8 @@ class Mainpage extends React.Component {
                 </div>
                 <div className="center">
                     <p>Search for a Book by title</p>
-                    <p>Save any books</p>
-                    <p>Read the description of any books</p>
+                    <p>Includes Links to Purchase Book from Google</p>
+                    <p>Option to Save Book</p>
                 </div>
             </div>
         )

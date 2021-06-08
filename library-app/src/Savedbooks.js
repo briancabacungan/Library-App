@@ -1,10 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import './App.css';
+import Booksearch from './Booksearch';
 
 
 class Savedbooks extends React.Component {
+    /* constructor(props) {
+        super(props);
+        this.state = {
+            data: this.props.data
+        }
+    } */
+
     render() {
+        //const { data } = this.state
+
         return (
             <div>
                 <div className="center">
