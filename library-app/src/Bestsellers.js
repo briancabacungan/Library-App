@@ -8,13 +8,15 @@ class Bestsellers extends React.Component {
                 <div>
                     <h1>Bestsellers</h1>
                 </div>
-
-            <div>
-                <button type="button">
-                    <Link to="/Mainpage"></Link>
-                </button>
-            </div>
-                
+                <div>
+                    <button type="button">
+                        <Link to="/">Home</Link>
+                    </button>
+                    <br/><br/><br/>
+                    <button type="button">
+                        <Link to="/bestsellers">Bestsellers</Link>
+                    </button>
+                </div>
             </div>
         )
     }
