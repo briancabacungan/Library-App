@@ -79,8 +79,7 @@ const Booksearch = () => {
                                         <p>{bookAuthors(book.volumeInfo.authors)}</p>
                                         <p>{book.volumeInfo.publishedDate}</p>
                                         <p>{book.volumeInfo.description}</p>
-                                        <a href={book.saleInfo.buyLink}>Click Here to Purchase from Google</a>
-                                        
+                                        <a href={book.saleInfo.buyLink}>Click Here to Purchase from Google (if available)</a>
                                         <section>
                                             <br/>
                                             <button type="button" className="button">
